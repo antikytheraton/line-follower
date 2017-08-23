@@ -2,7 +2,7 @@
 
 ### Codigo para cargar a arduino
 
-- cargar codePD.ino
+- cargar codePID.ino
 
 ### Codigo para probar motores
 
