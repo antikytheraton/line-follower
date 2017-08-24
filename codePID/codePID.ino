@@ -6,7 +6,7 @@
 #define leftMaxSpeed 200 // max speed of the robot
 #define rightBaseSpeed 150 // this is the speed at which the motors should spin when the robot is perfectly on the line
 #define leftBaseSpeed 150  // this is the speed at which the motors should spin when the robot is perfectly on the line
-#define NUM_SENSORS  2     // number of sensors used
+#define NUM_SENSORS  6     // number of sensors used
 #define TIMEOUT       2500  // waits for 2500 us for sensor outputs to go low
 #define EMITTER_PIN   2     // emitter is controlled by digital pin 2
 
@@ -19,8 +19,8 @@
 #define motorPower 8
 
 QTRSensorsRC qtrrc((unsigned char[]) {
-  14, 15
-} , NUM_SENSORS, TIMEOUT, EMITTER_PIN); // sensor connected through analog pins A0 - A1 i.e. digital pins 14-19
+  14, 15, 16, 17, 18, 19
+} , NUM_SENSORS, TIMEOUT, EMITTER_PIN); // sensor connected through analog pins A0 - A5 i.e. digital pins 14-19
 
 unsigned int sensorValues[NUM_SENSORS];
 
